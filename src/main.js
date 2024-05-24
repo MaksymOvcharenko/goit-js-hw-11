@@ -36,7 +36,12 @@ form.addEventListener('submit', event => {
       imagePlace.innerHTML = markup;
       imgBoxLight();
     })
-    .catch(error => console.log(error))
+    .catch(error =>
+      iziToast.error({
+        position: 'topRight',
+        message: 'Error',
+      })
+    )
     .finally(() => {
       event.target.reset();
     });
