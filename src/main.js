@@ -29,6 +29,7 @@ form.addEventListener('submit', event => {
           message:
             'Sorry, there are no images matching your search query. Please try again!',
         });
+        imagePlace.innerHTML = '';
         return;
       }
       const markup = imagesRender(data.hits);
