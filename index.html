@@ -7,18 +7,23 @@
     <title>Maksym Ovcharenko 11 HomeWork</title>
     
     <script type="module" crossorigin src="/vanilla-app-template/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-10c40100.css">
+    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-0fc460d7.js">
+    <link rel="stylesheet" href="/vanilla-app-template/assets/vendor-4b066c51.css">
+    <link rel="stylesheet" href="/vanilla-app-template/assets/index-1eee15ae.css">
   </head>
+
   <body>
     <form action="submit" class="find-form">
-      <input type="text" name="find-text" id="find-text" class="find-data" />
-      <button type="submit" class="find-btn">Search</button>
+      <input
+        type="text"
+        name="find-text"
+        id="find-text"
+        class="find-data"
+        placeholder="Search images..."
+      />
+      <button type="submit" class="find-btn">Start</button>
     </form>
-    <ul class="list-image">
-      <li>
-        <a href=""><img src="" alt="" /></a>
-      </li>
-    </ul>
+    <ul class="galleriesBox"></ul>
     
   </body>
 </html>
